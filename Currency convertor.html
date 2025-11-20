@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="Currency convertor.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="back" href="Tradient Capstone.Html">← Back</a>
+        <div class="main-title">Currency Converter</div>
+        <img src="Logo.png" alt="Tradiant Logo" class="logo">
+    </header>
+
+  <main class="main-area">
+    <aside class="card selector-card">
+      <div class="selector-scroll">
+        <div>
+          <div class="title">From</div>
+          <div class="options">
+            <label>USD</label>
+            <label>EUR</label>
+            <label>GBP</label>
+            <label>INR</label>
+            <details class="more">
+              <summary>More ▾</summary>
+              <div class="more-options">
+                <label>AUD</label>
+                <label>CAD</label>
+                <label>JPY</label>
+                <label>SGD</label>
+                <label>CHF</label>
+                <label>CNY</label>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div>
+          <div class="title">To</div>
+          <div class="options">
+            <label>USD</label>
+            <label>EUR</label>
+            <label>GBP</label>
+            <label>INR</label>
+            <details class="more">
+              <summary>More ▾</summary>
+              <div class="more-options">
+                <label>AUD</label>
+                <label>CAD</label>
+                <label>JPY</label>
+                <label>SGD</label>
+                <label>CHF</label>
+                <label>CNY</label>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div>
+          <div class="title">Quick Amount</div>
+          <div class="options">
+            <label>10</label>
+            <label>50</label>
+            <label>100</label>
+            <label>500</label>
+            <label>1000</label>
+          </div>
+        </div>
+
+        <div>
+          <div class="title">Custom Amount</div>
+          <div class="custom-amt">
+            <input type="number" placeholder="Enter amount" min="0" step="any" />
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="card results-card">
+      <div class="results-card">
+        <div class="result">
+          <div class="converted-num">100.00</div>
+          <div class="converted-value">Converted Value</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
