@@ -1,28 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Book Shelf Design</title>
-<link rel="stylesheet" href="Tradient Capstone.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tradient - Financial Intelligence Platform</title>
+  <link rel="stylesheet" href="Tradient Capstone.css">
 </head>
 <body>
 
-    <nav id="main">
-        <div class="logo-container">
-            <img src="Logo.png" alt="Tradient Logo" id="logo">
-        </div>
-        <a href="#" class="sub">My Account</a>
-        <a href="#" class="sub">Budget Planner</a>
-        <a href="Currency convertor.html" class="sub">Currency Converter</a>
-        <a href="#" class="sub">Trending</a>
-        <a href="Login.html" class="sub">Login/Signup</a>
+  <nav id="main">
+    <div class="logo-container">
+      <img src="Logo.png" alt="Tradient logo" class="nav-logo">
+    </div>
+    <a href="#" class="sub">My Account</a>
+    <a href="#" class="sub">Budget Planner</a>
+    <a href="#" class="sub">Currency Converter</a>
+    <a href="#" class="sub">Trending</a>
+    <a href="#" class="sub">Login/Signup</a>
 
-        <div class="whole-search">
-            <input type="text" placeholder="Explore Financial Intelligence....">
-            <button class="Search">Search</button>
+    <div class="whole-search">
+      <input type="text" placeholder="Explore Financial Intelligence....">
+      <button class="Search">Search</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="gradient-text">Financial Intelligence</span><br>
+        At Your Fingertips
+      </h1>
+      <p class="hero-subtitle">Track real-time stock market data, analyze trends, and make informed investment decisions with our cutting-edge platform</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary">Get Started</button>
+        <button class="btn btn-secondary">Learn More</button>
+      </div>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📈</div>
+        <h3>Real-Time Data</h3>
+        <p>Access live stock prices and market movements from BSE and NSE exchanges</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Lightning Fast</h3>
+        <p>Experience blazing-fast performance with instant updates and seamless navigation</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Secure & Reliable</h3>
+        <p>Bank-grade security ensures your data and investments are always protected</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="market-section">
+    <div class="section-header">
+      <h2 class="section-title gradient-text">BSE Live Market</h2>
+      <p class="section-subtitle">Bombay Stock Exchange - Real-time updates</p>
+    </div>
+
+    <div class="carousel-container">
+      <div class="carousel carousel-right">
+        <div class="stock-card">
+          <div class="stock-header">
+            <img src="https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Reliance" class="stock-logo">
+            <div class="stock-info">
+              <h4 class="stock-symbol">RELIANCE</h4>
+              <p class="stock-name">Reliance Industries</p>
+            </div>
+          </div>
+          <div class="stock-body">
+            <p class="stock-price">₹2,456.75</p>
+            <p class="stock-change positive">+23.50 (+0.97%)</p>
+            <span class="exchange-badge bse">BSE</span>
+          </div>
         </div>
 
-    </nav>
+        <div class="stock-card">
+          <div class="stock-header">
+            <img src="https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpeg?auto=compress&cs=tinysrgb&w=100" alt="TCS" class="stock-logo">
+            <div class="stock-info">
+              <h4 class="stock-symbol">TCS</h4>
+              <p class="stock-name">Tata Consultancy Services</p>
+            </div>
+          </div>
+          <div class="stock-body">
+            <p class="stock-price">₹3,542.80</p>
+            <p class="stock-change negative">-12.30 (-0.35%)</p>
+            <span class="exchange-badge bse">BSE</span>
+          </div>
+        </div>
+
+        <div class="stock-card">
+          <div class="stock-header">
+            <img src="https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&w=100" alt="HDFC Bank" class="stock-logo">
+            <div class="stock-info">
+              <h4 class="stock-symbol">HDFCBANK</h4>
+              <p class="stock-name">HDFC Bank Limited</p>
+            </div>
+          </div>
+          <div class="stock-body">
+            <p class="stock-price">₹1,678.90</p>
+            <p class="stock-change positive">+18.60 (+1.12%)</p>
+            <span class="exchange-badge bse">BSE</span>
+          </div>
+        </div>
+
+        <div class="stock-card">
+          <div class="stock-header">
+            <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Infosys" class="stock-logo">
+            <div class="stock-info">
+              <h4 class="stock-symbol">INFY</h4>
+              <p class="stock-name">Infosys Limited</p>
+            </div>
+          </div>
+          <div class="stock-body">
+            <p class="stock-price">₹1,456.25</p>
+            <p class="stock-change positive">+8.75 (+0.60%)</p>
+            <span class="exchange-badge bse">BSE</span>
+          </div>
+        </div>
+
+        <div class="stock-card">
+          <div class="stock-header">
+            <img src="https://images.pexels.com/photos/50987/money-card-business-credit-card-50987.jpeg?auto=compress&cs=tinysrgb&w=100" alt="ICICI Bank" class="stock-logo">
+            <div class="stock-info">
+              <h4 class="stock-symbol">ICICIBANK</h4>
+              <p class="stock-name">ICICI Bank Limited</p>
+            </div>
+          </div>
+          <div class="stock-body">
+            <p class="stock-price">₹987.50</p>
+            <p class="stock-change negative">-5.25 (-0.53%)</p>
+            <span class="exchange-badge bse">BSE</span>
+          </div>
+        </div>
+
+        <div class="stock-card">
+          <div class="stock-header">
+            <img src="https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Bharti Airtel" class="stock-logo">
+            <div class="stock-info">
+              <h4 class="stock-symbol">BHARTIARTL</h4>
+              <p class="stock-name">Bharti Airtel Limited</p>
+            </div>
+          </div>
+          <div class="stock-body">
+            <p class="stock-price">₹1,234.30</p>
+            <p class="stock-change positive">+15.80 (+1.30%)</p>
+            <span class="exchange-badge bse">BSE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="market-section">
+    <div class="section-header">
+      <h2 class="section-title gradient-text">NSE Live Market</h2>
+      <p class="section-subtitle">National Stock Exchange - Real-time updates</p>
+    </div>
+
+    <div class="carousel-container">
+      <div class="carousel carousel-left">
+        <div class="stock-card">
+          <div class="stock-header">
+            <img src="https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Reliance" class="stock-logo">
+            <div class="stock-info">
+              <h4 class="stock-symbol">RELIANCE</h4>
+              <p class="stock-name">Reliance Industries</p>
+            </div>
+          </div>
+          <div class="stock-body">
+            <p class="stock-price">₹2,458.90</p>
+            <p class="stock-change positive">+25.65 (+1.05%)</p>
+            <span class="exchange-badge nse">NSE</span>
+          </div>
+        </div>
+
+        <div class="stock-card">
+          <div class="stock-header">
+            <img src="https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpeg?auto=compress&cs=tinysrgb&w=100" alt="TCS" class="stock-logo">
+            <div class="stock-info">
+              <h4 class="stock-symbol">TCS</h4>
+              <p class="stock-name">Tata Consultancy Services</p>
+            </div>
+          </div>
+          <div class="stock-body">
+            <p class="stock-price">₹3,545.20</p>
+            <p class="stock-change negative">-9.90 (-0.28%)</p>
+            <span class="exchange-badge nse">NSE</span>
+          </div>
+        </div>
+
+        <div class="stock-card">
+          <div class="stock-header">
+            <img src="https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&w=100" alt="HDFC Bank" class="stock-logo">
+            <div class="stock-info">
+              <h4 class="stock-symbol">HDFCBANK</h4>
+              <p class="stock-name">HDFC Bank Limited</p>
+            </div>
+          </div>
+          <div class="stock-body">
+            <p class="stock-price">₹1,680.15</p>
+            <p class="stock-change positive">+19.85 (+1.19%)</p>
+            <span class="exchange-badge nse">NSE</span>
+          </div>
+        </div>
+
+        <div class="stock-card">
+          <div class="stock-header">
+            <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Infosys" class="stock-logo">
+            <div class="stock-info">
+              <h4 class="stock-symbol">INFY</h4>
+              <p class="stock-name">Infosys Limited</p>
+            </div>
+          </div>
+          <div class="stock-body">
+            <p class="stock-price">₹1,457.80</p>
+            <p class="stock-change positive">+10.30 (+0.71%)</p>
+            <span class="exchange-badge nse">NSE</span>
+          </div>
+        </div>
+
+        <div class="stock-card">
+          <div class="stock-header">
+            <img src="https://images.pexels.com/photos/50987/money-card-business-credit-card-50987.jpeg?auto=compress&cs=tinysrgb&w=100" alt="ICICI Bank" class="stock-logo">
+            <div class="stock-info">
+              <h4 class="stock-symbol">ICICIBANK</h4>
+              <p class="stock-name">ICICI Bank Limited</p>
+            </div>
+          </div>
+          <div class="stock-body">
+            <p class="stock-price">₹988.90</p>
+            <p class="stock-change negative">-3.85 (-0.39%)</p>
+            <span class="exchange-badge nse">NSE</span>
+          </div>
+        </div>
+
+        <div class="stock-card">
+          <div class="stock-header">
+            <img src="https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Bharti Airtel" class="stock-logo">
+            <div class="stock-info">
+              <h4 class="stock-symbol">BHARTIARTL</h4>
+              <p class="stock-name">Bharti Airtel Limited</p>
+            </div>
+          </div>
+          <div class="stock-body">
+            <p class="stock-price">₹1,236.75</p>
+            <p class="stock-change positive">+18.25 (+1.50%)</p>
+            <span class="exchange-badge nse">NSE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="comparison-section">
+    <div class="section-header">
+      <h2 class="section-title gradient-text">Exchange Comparison</h2>
+      <p class="section-subtitle">Real-time comparison between Bombay Stock Exchange and National Stock Exchange</p>
+    </div>
+
+    <div class="stock-selector">
+      <button class="selector-btn active" data-stock="RELIANCE">RELIANCE</button>
+      <button class="selector-btn" data-stock="TCS">TCS</button>
+      <button class="selector-btn" data-stock="HDFCBANK">HDFCBANK</button>
+      <button class="selector-btn" data-stock="INFY">INFY</button>
+      <button class="selector-btn" data-stock="ICICIBANK">ICICIBANK</button>
+      <button class="selector-btn" data-stock="BHARTIARTL">BHARTIARTL</button>
+    </div>
+
+    <div class="comparison-grid">
+      <div class="exchange-card bse-card">
+        <div class="exchange-header">
+          <div class="exchange-icon">🏛️</div>
+          <div>
+            <h3 class="exchange-name">BSE</h3>
+            <p class="exchange-subtitle">Bombay Stock Exchange</p>
+          </div>
+        </div>
+
+        <div class="stock-comparison-detail">
+          <div class="comparison-stock-header">
+            <img src="https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Stock" class="comparison-logo">
+            <div>
+              <h4 class="comparison-symbol">RELIANCE</h4>
+              <p class="comparison-name">Reliance Industries</p>
+            </div>
+          </div>
+
+          <div class="comparison-details">
+            <div class="detail-box">
+              <p class="detail-label">Current Price</p>
+              <p class="detail-value">₹2,456.75</p>
+              <p class="detail-change positive">+23.50 (+0.97%)</p>
+            </div>
+
+            <div class="detail-box">
+              <p class="detail-label">Average Market Change</p>
+              <div class="detail-value market-change">+0.87%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exchange-card nse-card">
+        <div class="exchange-header">
+          <div class="exchange-icon">📊</div>
+          <div>
+            <h3 class="exchange-name">NSE</h3>
+            <p class="exchange-subtitle">National Stock Exchange</p>
+          </div>
+        </div>
+
+        <div class="stock-comparison-detail">
+          <div class="comparison-stock-header">
+            <img src="https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Stock" class="comparison-logo">
+            <div>
+              <h4 class="comparison-symbol">RELIANCE</h4>
+              <p class="comparison-name">Reliance Industries</p>
+            </div>
+          </div>
+
+          <div class="comparison-details">
+            <div class="detail-box">
+              <p class="detail-label">Current Price</p>
+              <p class="detail-value">₹2,458.90</p>
+              <p class="detail-change positive">+25.65 (+1.05%)</p>
+            </div>
+
+            <div class="detail-box">
+              <p class="detail-label">Average Market Change</p>
+              <div class="detail-value market-change">+0.95%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="differential-analysis">
+      <h4>Price Differential Analysis</h4>
+      <div class="analysis-grid">
+        <div class="analysis-box">
+          <p class="analysis-label">Price Difference</p>
+          <p class="analysis-value">₹2.15</p>
+        </div>
+        <div class="analysis-box">
+          <p class="analysis-label">Change Difference</p>
+          <p class="analysis-value positive">+0.08%</p>
+        </div>
+        <div class="analysis-box">
+          <p class="analysis-label">Better Performance</p>
+          <p class="analysis-value gradient-text">NSE</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer-brand gradient-text">Tradient</p>
+    <p class="footer-text">Your trusted partner in financial intelligence</p>
+  </footer>
+
+  <script>
+    const selectorButtons = document.querySelectorAll('.selector-btn');
+
+    selectorButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        selectorButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
 
 </body>
 </html>
