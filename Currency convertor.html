@@ -1,91 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency Convertor</title>
-    <link rel="stylesheet" href="Currency convertor.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tradient Currency Converter</title>
+  <link rel="stylesheet" href="c2.css">
 </head>
 <body>
-    <header class="topbar">
-        <a class="back" href="Tradient Capstone.Html">← Back</a>
-        <div class="main-title">Currency Converter</div>
-        <img src="Logo.png" alt="Tradiant Logo" class="logo">
-    </header>
+  <header>
+    <button class="back-btn">
+      <span class="back-arrow">←</span>
+      <span class="back-text">Back</span>
+    </button>
+    <img src="Logo.png" alt="Tradient Logo" class="logo">
+    <div class="header-spacer"></div>
+  </header>
 
-  <main class="main-area">
-    <aside class="card selector-card">
-      <div class="selector-scroll">
-        <div>
-          <div class="title">From</div>
-          <div class="options">
-            <label>USD</label>
-            <label>EUR</label>
-            <label>GBP</label>
-            <label>INR</label>
-            <details class="more">
-              <summary>More ▾</summary>
-              <div class="more-options">
-                <label>AUD</label>
-                <label>CAD</label>
-                <label>JPY</label>
-                <label>SGD</label>
-                <label>CHF</label>
-                <label>CNY</label>
+  <div class="container">
+    <div class="bg-circle bg-circle-1"></div>
+    <div class="bg-circle bg-circle-2"></div>
+    <div class="bg-circle bg-circle-3"></div>
+
+    <div class="title-section">
+      <h1 class="main-title">
+        <span class="gradient-text">Currency Converter</span>
+      </h1>
+      <p class="subtitle">
+        Convert currencies in real-time with our modern, intuitive interface
+      </p>
+    </div>
+
+    <div class="converter-card">
+      <div class="converter-content">
+        
+        <div class="currency-section">
+          <label class="currency-label">From</label>
+          <div class="input-group">
+            <input type="text" class="amount-input" placeholder="1,000.00" value="1,000.00">
+            <div class="currency-dropdown">
+              <div class="dropdown-selected">
+                <span class="currency-flag">🇺🇸</span>
+                <span class="currency-code">USD</span>
+                <span class="dropdown-arrow">▼</span>
               </div>
-            </details>
+            </div>
           </div>
+          <p class="currency-name">United States Dollar</p>
         </div>
 
-        <div>
-          <div class="title">To</div>
-          <div class="options">
-            <label>USD</label>
-            <label>EUR</label>
-            <label>GBP</label>
-            <label>INR</label>
-            <details class="more">
-              <summary>More ▾</summary>
-              <div class="more-options">
-                <label>AUD</label>
-                <label>CAD</label>
-                <label>JPY</label>
-                <label>SGD</label>
-                <label>CHF</label>
-                <label>CNY</label>
+        <div class="swap-container">
+          <button class="swap-btn">
+            <span class="swap-icon">⇅</span>
+          </button>
+        </div>
+
+        <div class="currency-section">
+          <label class="currency-label">To</label>
+          <div class="input-group">
+            <input type="text" class="amount-input result-input" placeholder="0.00" value="83,500.00" readonly>
+            <div class="currency-dropdown">
+              <div class="dropdown-selected">
+                <span class="currency-flag">🇮🇳</span>
+                <span class="currency-code">INR</span>
+                <span class="dropdown-arrow">▼</span>
               </div>
-            </details>
+            </div>
+          </div>
+          <p class="currency-name">Indian Rupee</p>
+        </div>
+
+        <button class="convert-btn">
+          <span>Convert Currency</span>
+        </button>
+
+        <div class="rate-info">
+          <div class="rate-box">
+            <span class="rate-label">Exchange Rate</span>
+            <span class="rate-value gradient-text">1 USD = 83.50 INR</span>
+          </div>
+          <div class="rate-timestamp">
+            Last updated: Just now
           </div>
         </div>
 
-        <div>
-          <div class="title">Quick Amount</div>
-          <div class="options">
-            <label>10</label>
-            <label>50</label>
-            <label>100</label>
-            <label>500</label>
-            <label>1000</label>
-          </div>
-        </div>
-
-        <div>
-          <div class="title">Custom Amount</div>
-          <div class="custom-amt">
-            <input type="number" placeholder="Enter amount" min="0" step="any" />
-          </div>
-        </div>
       </div>
-    </aside>
+    </div>
 
-    <section class="card results-card">
-      <div class="results-card">
-        <div class="result">
-          <div class="converted-num">100.00</div>
-          <div class="converted-value">Converted Value</div>
+    <div class="popular-section">
+      <h2 class="section-title gradient-text">Popular Conversions</h2>
+      <div class="popular-grid">
+        
+        <div class="popular-card">
+          <div class="popular-header">
+            <div class="currency-pair">
+              <span class="popular-from">🇮🇳 INR</span>
+              <span class="popular-arrow">→</span>
+              <span class="popular-to">🇺🇸 USD</span>
+            </div>
+          </div>
+          <div class="popular-rate">100 INR = 1.20 USD</div>
         </div>
+
+        <div class="popular-card">
+          <div class="popular-header">
+            <div class="currency-pair">
+              <span class="popular-from">🇮🇳 INR</span>
+              <span class="popular-arrow">→</span>
+              <span class="popular-to">🇪🇺 EUR</span>
+            </div>
+          </div>
+          <div class="popular-rate">100 INR = 1.10 EUR</div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-header">
+            <div class="currency-pair">
+              <span class="popular-from">🇮🇳 INR</span>
+              <span class="popular-arrow">→</span>
+              <span class="popular-to">🇬🇧 GBP</span>
+            </div>
+          </div>
+          <div class="popular-rate">100 INR = 0.95 GBP</div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-header">
+            <div class="currency-pair">
+              <span class="popular-from">🇮🇳 INR</span>
+              <span class="popular-arrow">→</span>
+              <span class="popular-to">🇯🇵 JPY</span>
+            </div>
+          </div>
+          <div class="popular-rate">100 INR = 179.50 JPY</div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-header">
+            <div class="currency-pair">
+              <span class="popular-from">🇮🇳 INR</span>
+              <span class="popular-arrow">→</span>
+              <span class="popular-to">🇨🇦 CAD</span>
+            </div>
+          </div>
+          <div class="popular-rate">100 INR = 1.62 CAD</div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-header">
+            <div class="currency-pair">
+              <span class="popular-from">🇮🇳 INR</span>
+              <span class="popular-arrow">→</span>
+              <span class="popular-to">🇦🇺 AUD</span>
+            </div>
+          </div>
+          <div class="popular-rate">100 INR = 1.84 AUD</div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-header">
+            <div class="currency-pair">
+              <span class="popular-from">🇮🇳 INR</span>
+              <span class="popular-arrow">→</span>
+              <span class="popular-to">🇨🇭 CHF</span>
+            </div>
+          </div>
+          <div class="popular-rate">100 INR = 1.06 CHF</div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-header">
+            <div class="currency-pair">
+              <span class="popular-from">🇮🇳 INR</span>
+              <span class="popular-arrow">→</span>
+              <span class="popular-to">🇨🇳 CNY</span>
+            </div>
+          </div>
+          <div class="popular-rate">100 INR = 8.62 CNY</div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-header">
+            <div class="currency-pair">
+              <span class="popular-from">🇮🇳 INR</span>
+              <span class="popular-arrow">→</span>
+              <span class="popular-to">🇸🇬 SGD</span>
+            </div>
+          </div>
+          <div class="popular-rate">100 INR = 1.60 SGD</div>
+        </div>
+
       </div>
-    </section>
-  </main>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-brand gradient-text">TRADIANT</div>
+    <p class="footer-text">© 2024 Tradiant. Currency conversion made simple.</p>
+  </footer>
+
 </body>
 </html>

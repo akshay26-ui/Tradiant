@@ -89,6 +89,11 @@ body {
   white-space: nowrap;
 }
 
+.sub:focus {
+  outline: none;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+}
+
 .sub::after {
   content: "";
   position: absolute;
@@ -178,6 +183,11 @@ body {
 .Search:hover {
   animation: none;
   background: linear-gradient(90deg, var(--grad2), var(--grad3));
+}
+
+.Search:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .hero {
@@ -697,10 +707,4 @@ body {
 .footer-text {
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.95rem;
-}
-
-a:focus,
-button:focus {
-  outline: 2px solid var(--grad1);
-  outline-offset: 2px;
 }
