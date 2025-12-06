@@ -4,14 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tradient Currency Converter</title>
-  <link rel="stylesheet" href="c2.css">
+  <link rel="stylesheet" href="Currency Convertor.css">
 </head>
 <body>
   <header>
-    <button class="back-btn">
-      <span class="back-arrow">←</span>
-      <span class="back-text">Back</span>
-    </button>
+   <button class="back-btn"><a class="back" href="Tradient Capstone.Html"> ← Back</a></button>
     <img src="Logo.png" alt="Tradient Logo" class="logo">
     <div class="header-spacer"></div>
   </header>
@@ -36,7 +33,7 @@
         <div class="currency-section">
           <label class="currency-label">From</label>
           <div class="input-group">
-            <input type="text" class="amount-input" placeholder="1,000.00" value="1,000.00">
+            <input type="text" id="fromAmount" class="amount-input" placeholder="1,000.00" value="1000">
             <div class="currency-dropdown">
               <div class="dropdown-selected">
                 <span class="currency-flag">🇺🇸</span>
@@ -57,7 +54,7 @@
         <div class="currency-section">
           <label class="currency-label">To</label>
           <div class="input-group">
-            <input type="text" class="amount-input result-input" placeholder="0.00" value="83,500.00" readonly>
+            <input type="text" id="toAmount" class="amount-input result-input" placeholder="0.00" value="90,000.00" readonly>
             <div class="currency-dropdown">
               <div class="dropdown-selected">
                 <span class="currency-flag">🇮🇳</span>
@@ -69,14 +66,14 @@
           <p class="currency-name">Indian Rupee</p>
         </div>
 
-        <button class="convert-btn">
+        <button class="convert-btn" onclick="convertCurrency()">
           <span>Convert Currency</span>
         </button>
 
         <div class="rate-info">
           <div class="rate-box">
             <span class="rate-label">Exchange Rate</span>
-            <span class="rate-value gradient-text">1 USD = 83.50 INR</span>
+            <span class="rate-value gradient-text">1 USD = 90.00 INR</span>
           </div>
           <div class="rate-timestamp">
             Last updated: Just now
@@ -98,7 +95,7 @@
               <span class="popular-to">🇺🇸 USD</span>
             </div>
           </div>
-          <div class="popular-rate">100 INR = 1.20 USD</div>
+          <div class="popular-rate">100 INR = 1.11 USD</div>
         </div>
 
         <div class="popular-card">
@@ -195,9 +192,16 @@
   </div>
 
   <footer class="footer">
-    <div class="footer-brand gradient-text">TRADIANT</div>
     <p class="footer-text">© 2024 Tradiant. Currency conversion made simple.</p>
+    <p class="footer-text gradient-text">Made with ❤️ by AKS</p>
   </footer>
+
+  <script>
+    function convertCurrency() {
+      let amount = parseFloat(document.getElementById('fromAmount').value.replace(/,/g, ''))
+      document.getElementById('toAmount').value = (amount * 90).toLocaleString('en-In', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    }
+  </script>
 
 </body>
 </html>

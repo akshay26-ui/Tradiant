@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Budget Planner</title>
+  <link rel="stylesheet" href="Budget Planner.css" />
+</head>
+<body>
+  <header class="hdr">
+    <button class="back-btn"><a class="back" href="Tradient Capstone.Html"> ← Back</a></button>
+    <nav class="nav">
+      <a href="#">Dashboard</a>
+      <a href="#">Reports</a>
+      <a href="#">Analytics</a>
+      <a href="#" class="new-link">+ New</a>
+    </nav>
+    <div class="logo"><img src="logo.png" alt="logo" /></div>
+  </header>
+
+  <main class="wrap">
+    <section class="top">
+      <div class="stats">
+        <div class="box">
+          <span class="label">Total Budget</span>
+          <div class="val">₹1,00,000</div>
+        </div>
+        <div class="box spent">
+          <span class="label">Spent</span>
+          <div class="val">₹68,450</div>
+        </div>
+        <div class="box">
+          <span class="label">Available</span>
+          <div class="val">₹31,550</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cats">
+      <h2 class="Spending">Spending Categories</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="row"><div class="icon">🏠</div><h3>Housing</h3></div>
+          <div class="amt">₹28,400</div>
+          <div class="bar"><div class="fill" style="width:71%"></div></div>
+          <div class="meta"><span>71% of ₹40,000</span><span class="tag ok">On Track</span></div>
+        </div>
+
+        <div class="card">
+          <div class="row"><div class="icon">🍔</div><h3>Food</h3></div>
+          <div class="amt">₹12,600</div>
+          <div class="bar"><div class="fill" style="width:84%"></div></div>
+          <div class="meta"><span>84% of ₹15,000</span><span class="tag warn">Careful</span></div>
+        </div>
+
+        <div class="card">
+          <div class="row"><div class="icon">🚗</div><h3>Transport</h3></div>
+          <div class="amt">₹6,000</div>
+          <div class="bar"><div class="fill" style="width:60%"></div></div>
+          <div class="meta"><span>60% of ₹10,000</span><span class="tag ok">Good</span></div>
+        </div>
+
+        <div class="card accent">
+          <div class="row"><div class="icon">🎮</div><h3>Entertainment</h3></div>
+          <div class="amt">₹4,400</div>
+          <div class="bar"><div class="fill" style="width:62.5%"></div></div>
+          <div class="meta"><span>63% of ₹7,000</span><span class="tag ok">Good</span></div>
+        </div>
+
+        <div class="card">
+          <div class="row"><div class="icon">💡</div><h3>Utilities</h3></div>
+          <div class="amt">₹4,750</div>
+          <div class="bar"><div class="fill" style="width:47.5%"></div></div>
+          <div class="meta"><span>48% of ₹10,000</span><span class="tag ok">Great</span></div>
+        </div>
+
+        <div class="card">
+          <div class="row"><div class="icon">✨</div><h3>Other</h3></div>
+          <div class="amt">₹12,300</div>
+          <div class="bar"><div class="fill" style="width:68.3%"></div></div>
+          <div class="meta"><span>68% of ₹18,000</span><span class="tag ok">Good</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tx">
+      <div class="head">
+        <h2>Recent Transactions</h2>
+        <a class="view" href="#">View All →</a>
+      </div>
+
+      <div class="txlist">
+        <div class="titem">
+          <div class="ticon exp">🏪</div>
+          <div class="tdet"><span class="tname">Grocery Store</span><span class="tdate">Today, 2:45 PM</span></div>
+          <div class="tamt exp">-₹2,450</div>
+        </div>
+
+        <div class="titem">
+          <div class="ticon exp">⛽</div>
+          <div class="tdet"><span class="tname">Petrol Pump</span><span class="tdate">Yesterday, 8:20 AM</span></div>
+          <div class="tamt exp">-₹1,800</div>
+        </div>
+
+        <div class="titem">
+          <div class="ticon inc">💼</div>
+          <div class="tdet"><span class="tname">Monthly Salary</span><span class="tdate">Dec 1, 9:00 AM</span></div>
+          <div class="tamt inc">+₹1,00,000</div>
+        </div>
+
+        <div class="titem">
+          <div class="ticon exp">📱</div>
+          <div class="tdet"><span class="tname">Phone Recharge</span><span class="tdate">Nov 30, 3:15 PM</span></div>
+          <div class="tamt exp">-₹899</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    Made with ❤️ by AKS
+  </footer>
+</body>
+</html>

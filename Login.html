@@ -22,9 +22,9 @@
       </div>
       <form class="form">
         <div class="main">
-          <input type="email" class="input" placeholder="Email Address" />
+          <input id="emailInput" type="email" class="input" placeholder="Email Address" />
         </div>
-
+        <p id="email-error" style="color: red;"></p>
         <div class="main">
           <input type="password" class="input" placeholder="Password" />
         </div>
@@ -46,6 +46,22 @@
         </div>
       </form>
     </div>
+     <footer class="footer">
+       Made with ❤️ by AKS
+     </footer>
   </div>
+  <script>
+    let emailInput = document.getElementById('emailInput');
+    let emailError = document.getElementById('email-error');
+
+    emailInput.addEventListener('input', function() {
+      if (emailInput.value.includes("@") && emailInput.value.includes(".com")) {
+        emailError.textContent = "";
+      } else {
+        emailError.textContent = 'Invalid email address';
+      }
+    })
+  </script>
+
 </body>
 </html>
