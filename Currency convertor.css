@@ -127,7 +127,7 @@ header::after {
   margin: 0 auto;
   padding: 60px 20px 40px;
   position: relative;
-  /* min-height: calc(100vh - 200px); */
+  min-height: calc(100vh - 200px);
 }
 
 .bg-circle {
@@ -254,7 +254,7 @@ header::after {
   padding: 16px 20px;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: white;
   transition: all 0.3s ease;
 }
 
@@ -303,7 +303,7 @@ header::after {
 
 .currency-code {
   font-size: 1.125rem;
-  color: #ffffff;
+  color: white;
 }
 
 .dropdown-arrow {
